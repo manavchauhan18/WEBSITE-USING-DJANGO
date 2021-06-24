@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 780px) {
+    .logo {
+        font-size: 20px !important;
+    }
+    .fa-bars{
+        font-size: 18px;
+        position: absolute;
+        right: -10px;
+        top: -5px;
+    }
+    .nav-links, .SignInAndUp{
+        display: none;
+    }
+
+
+}
+
+/* TOGGLER */
+
+@media screen and (max-width: 780px) {
+    .main-nav.responsive {
+        position: relative;
+        list-style-type: none;
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .main-nav.responsive a {
+        display: block;
+    }
+
+    .SignInAndUp.responsive {
+        display: block;
+    }
+
+    nav ul li {
+        list-style-type: none;
+    }
+}
+
+/* TOGGLER */
+
+@media screen and (min-width: 780px) {
+    .fa-bars {
+        display: none;
+    }
+
+    .main-nav {
+        list-style-type: none;
+        display: flex;
+    }
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+nav {
+    background-color: black;
+}
+
+body{
+    height: 100%;
+}
+
+li .nav-links {
+    padding: 5px;
+    font-size: large;
+    text-decoration: none;
+    color: white;
+}
+
+nav .logo {
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+.SignInAndUp {
+    font-size: large;
+    text-decoration: none;
+}
+
+.SignInAndUp a {
+    text-decoration: none;
+    color: white;
+    background-color: #85C1E9 ;
+    border-radius: 1rem;
+    padding:0.3rem;
+}
+
+.SignInAndUp a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
