@@ -10,14 +10,34 @@
     <title>WEBSITE</title>
 </head>
 <body>
-    <nav class="d-flex justify-content-between">
-        <span class="navbar-toggle">
-            <!-- <a  href="javascript:void(0);" class="toggler" onclick="Toggle()"> -->
-                <i class="fas fa-bars" onclick="toggle()"></i>
-            <!-- </a> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand text-white" href="#">Shop.Com</a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active text-white" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link text-white" href="#">Features</a>
+            <a class="nav-item nav-link text-white" href="#">About</a>
+            <a class="nav-item nav-link text-white" href="#">Contact Us</a>
+            <a class="nav-item nav-link disabled text-secondary" href="#">Coming Soon</a>
+            
+          </div>
+          <form class="form-inline text-right">
+            <button class="btn btn-primary btn-outline-light mr-2 " type="button">Sign Up</button>
+            <button class="btn btn-primary btn-outline-light" type="button">Log In</button>
+        </form>
+        </div>
+        
+    </nav>
+    <!-- <nav class="d-flex justify-content-between" id="js-navbar-toggle">
+        <span class="navbar-toggle" onclick="toggleFunction1(event)">
+                <i class="fas fa-bars" ></i>
         </span>
         <a class="logo" href="#">Shop.Com</a>
-        <ul class="main-nav align-self-center m-0 mr-2" id="js-navbar-toggle">
+        <ul class="main-nav align-self-center m-0 mr-2" >
             <li>
                 <a class="nav-links px-2" href="#">Home</a>
             </li>
@@ -38,7 +58,7 @@
             <a class="mr-2 px-3" href="#">Sign In</a>
             <a class="px-3"href="#">Sign Up</a>
         </div>
-    </nav>
+    </nav> -->
     <script src="{% static 'js/toggler.js' %}"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -1,4 +1,19 @@
-* {
+nav {
+    background-color: black;
+}
+
+.form-inline button {
+    background-color: #268CD0;
+}
+
+
+
+
+
+
+
+
+/* * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -23,7 +38,13 @@
 
 /* TOGGLER */
 
+/*
 @media screen and (max-width: 780px) {
+    nav ul li {
+        list-style-type: none;
+    }
+    
+
     .main-nav.responsive {
         position: relative;
         list-style-type: none;
@@ -35,24 +56,22 @@
         display: block;
     }
 
-    .SignInAndUp.responsive {
-        display: block;
+    
+    a .nav-links {
+        float: none;
+        text-align: left;
     }
-
-    nav ul li {
-        list-style-type: none;
-    }
-}
+    
+} */
 
 /* TOGGLER */
-
+/* 
 @media screen and (min-width: 780px) {
     .fa-bars {
         display: none;
     }
 
     .main-nav {
-        list-style-type: none;
         display: flex;
     }
 }
@@ -111,3 +130,7 @@ nav {
     transition: 0.5s;
 }
 
+.main-nav {
+    list-style-type: none;
+}
+ */
