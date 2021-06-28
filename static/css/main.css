@@ -13,17 +13,7 @@ nav {
     background-size: cover;
 }
 
-.heading h1 {
-    color: #ff724c;
+.about h1 {
+    border-bottom: solid;
+    
 }
-
-/* .hi {
-    position: absolute;
-    top: 120px;
-    left: 80px;
-    color: #ff724c;
-}
-
-.hi span {
-    color: white;
-} */
