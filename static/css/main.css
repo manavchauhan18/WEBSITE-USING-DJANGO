@@ -6,131 +6,24 @@ nav {
     background-color: #268CD0;
 }
 
-
-
-
-
-
-
-
-/* * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+.bg-image {
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: center ;
+    background-size: cover;
 }
 
-@media screen and (max-width: 780px) {
-    .logo {
-        font-size: 20px !important;
-    }
-    .fa-bars{
-        font-size: 18px;
-        position: absolute;
-        right: -10px;
-        top: -5px;
-    }
-    .nav-links, .SignInAndUp{
-        display: none;
-    }
-
-
+.heading h1 {
+    color: #ff724c;
 }
 
-/* TOGGLER */
-
-/*
-@media screen and (max-width: 780px) {
-    nav ul li {
-        list-style-type: none;
-    }
-    
-
-    .main-nav.responsive {
-        position: relative;
-        list-style-type: none;
-        padding-top: 2.5rem;
-        padding-bottom: 1rem;
-    }
-
-    .main-nav.responsive a {
-        display: block;
-    }
-
-    
-    a .nav-links {
-        float: none;
-        text-align: left;
-    }
-    
-} */
-
-/* TOGGLER */
-/* 
-@media screen and (min-width: 780px) {
-    .fa-bars {
-        display: none;
-    }
-
-    .main-nav {
-        display: flex;
-    }
-}
-
-.navbar-toggle {
+/* .hi {
     position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer; 
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 24px;
+    top: 120px;
+    left: 80px;
+    color: #ff724c;
 }
 
-nav {
-    background-color: black;
-}
-
-body{
-    height: 100%;
-}
-
-li .nav-links {
-    padding: 5px;
-    font-size: large;
-    text-decoration: none;
+.hi span {
     color: white;
-}
-
-nav .logo {
-    font-size: 35px;
-    text-decoration: none;
-    color: white;
-}
-
-nav {
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
-}
-
-.SignInAndUp {
-    font-size: large;
-    text-decoration: none;
-}
-
-.SignInAndUp a {
-    text-decoration: none;
-    color: white;
-    background-color: #85C1E9 ;
-    border-radius: 1rem;
-    padding:0.3rem;
-}
-
-.SignInAndUp a:hover{
-    background-color: white;
-    color: black;
-    transition: 0.5s;
-}
-
-.main-nav {
-    list-style-type: none;
-}
- */
+} */
