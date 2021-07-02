@@ -54,9 +54,8 @@ section.myprojects .project-slider .project-card {
 
 section.myprojects .project-slider .project-card .project-image img {
     width:80%;
-    height:200px;
+    height: 200px;
     object-fit:contain;
-    margin-bottom: -20px;
 }
 
 hr {

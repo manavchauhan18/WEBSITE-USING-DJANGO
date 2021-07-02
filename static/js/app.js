@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('.project-slider').slick({
         infinite: true,
-        speed: 300,
+        speed: 120,
         slidesToShow: 3,
         slidesToScroll: 3,
         prevArrow: $('.slick-prev'),
