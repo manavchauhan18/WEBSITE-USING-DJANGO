@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <title>WEBSITE</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <button type="button" class="btn-back-to-top btn btn-secondary btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
     <nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand text-white" href="#">MyPortfolio.Com</a>
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,9 +21,9 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active text-white" href="">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link text-white" href="#">About</a>
-            <a class="nav-item nav-link text-white" href="#">Projects</a>
+            <a class="nav-item nav-link active text-white" href="#Home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link text-white" href="#About">About</a>
+            <a class="nav-item nav-link text-white" href="#Projects">Projects</a>
             <a class="nav-item nav-link text-white" href="#">Contact Me</a>
             <a class="nav-item nav-link disabled text-secondary" href="#">Coming Soon</a>
             
@@ -36,22 +40,92 @@
             <div class=" text-white">
               <h1 class="mb-3">Hi I'm Manav Chauhan</h1>
               <h5 class="mb-4">A computer science student passionate about programming and design.</h5>
-              <a class="btn btn-outline-light btn-lg m-2">My Projects</a>
+              <a class="btn btn-outline-light btn-lg m-2" href="#Projects">My Projects</a>
               <a class="btn btn-outline-light btn-lg m-2">Contact Me</a>
             </div>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="About">
       <div class="d-flex justify-content-center align-items-center pl-2 pr-2">
         <h1 class="mt-3">About Me</h1>
       </div>
-      <div class="justify-content-center text-justify pl-5 pr-5 pt-3">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eveniet exercitationem odio neque commodi facilis itaque repudiandae optio, dolorum iusto sint magnam perferendis inventore! Iste magni animi dolorem, quis, eius officia, cum alias debitis aliquid obcaecati est quia doloremque blanditiis nulla doloribus eum quasi praesentium. Omnis, ratione eaque? Recusandae, nihil!
+      <div class="justify-content-center text-justify pl-5 pr-5 pt-3 mb-4">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eveniet exercitationem odio neque commodi facilis itaque repudiandae optio, dolorum iusto sint magnam perferendis inventore! Iste magni animi dolorem, quis, eius officia, cum alias debitis aliquid obcaecati est quia doloremque blanditiis nulla doloribus eum quasi praesentium. Omnis, ratione eaque? Recusandae, nihil!</p>
       </div>
     </div>
+    <section class="myprojects" id="Projects">
+      <div class="container">
+        <h1 class="section-heading"> My Projects </h1>
+        <div class="slider">
+          <button class="slider-btn slick-prev"><img src="../../../static/images/icons/prev.svg" alt=""></button>
+          <button class="slider-btn slick-next"><img src="../../../static/images/icons/next.svg" alt=""></button>
+          <div class="project-slider">
+            <div class="project-card">
+              <div class="project-image d-flex justify-content-center align-items-center">
+                <img src="../../../static/images/background.jpg" alt="">
+              </div>
+              <hr>
+              <div>
+                <h3><a class="text-center" href="#">Face Mask Detection</a></h3>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image d-flex justify-content-center align-items-center">
+                <img src="../../../static/images/background.jpg" alt="">
+              </div>
+              <hr>
+              <div>
+                <h3><a class="text-center" href="#">Face Mask Detection</a></h3>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image d-flex justify-content-center align-items-center">
+                <img src="../../../static/images/background.jpg" alt="">
+              </div>
+              <hr>
+              <div>
+                <h3><a class="text-center" href="#">Face Mask Detection</a></h3>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image d-flex justify-content-center align-items-center">
+                <img src="../../../static/images/background.jpg" alt="">
+              </div>
+              <hr>
+              <div>
+                <h3><a class="text-center" href="#">Face Mask Detection 2</a></h3>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image d-flex justify-content-center align-items-center">
+                <img src="../../../static/images/background.jpg" alt="">
+              </div>
+              <hr>
+              <div>
+                <h3><a class="text-center" href="#">Face Mask Detection 2</a></h3>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image d-flex justify-content-center align-items-center">
+                <img src="../../../static/images/background.jpg" alt="">
+              </div>
+              <hr>
+              <div>
+                <h3><a href="#">Face Mask Detection 2</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="{% static 'js/app.js' %}"></script>
+  <script src="{% static 'js/backToTop.js' %}"></script>
 </body>
 </html>

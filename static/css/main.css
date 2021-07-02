@@ -1,3 +1,10 @@
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
 nav {
     background-color: black;
 }
@@ -14,6 +21,100 @@ nav {
 }
 
 .about h1 {
-    border-bottom: solid;
-    
+    color: #4C5357;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 4rem;
+    background: #F0F0F0;
+}
+
+.section-heading {
+    text-align: center;
+    position: relative;
+    color: #4C5357;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+}
+
+section.myprojects .project-slider .project-card {
+    background: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+section.myprojects .project-slider .project-card .project-image img {
+    width:80%;
+    height:200px;
+    object-fit:contain;
+    margin-bottom: -20px;
+}
+
+hr {
+    border:1px solid #F0F0F0;
+    opacity: 0.8;
+    margin:1rem 0;
+}
+
+.project-slider .project-card button img {
+    background: black;
+    padding:0.50rem;
+    height:20px;
+    margin-right:1.2rem;
+}
+
+.slick-slide{
+    margin:0 27px;
+}
+.slick-list{
+    margin:0 -27px;
+}
+.top-products .slider-btn{
+    width: 30px;
+    height:30px;
+    border: none;
+    background:var(--primary);
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -ms-border-radius:4px;
+    -o-border-radius:4px;
+    cursor:pointer;
+    outline:none;
+}
+
+.slick-prev{
+    position:absolute;
+    top:46%;
+    left:-3rem;
+    z-index: 1;
+    border-radius: 0.4rem;
+}
+.slick-next{
+    position:absolute;
+    top:46%;
+    right:-3rem;
+    z-index: 1;
+    border-radius: 0.4rem;
+}
+
+.myprojects .slider {
+    position: relative;
+}
+
+.slick-track{
+    padding:1rem 0;
+}
+
+.h3, h3 {
+    text-align: center;
 }
