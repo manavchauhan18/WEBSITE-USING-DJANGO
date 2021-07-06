@@ -57,13 +57,41 @@
       <div class="container">
         <h1 class="section-heading"> My Projects </h1>
         <form class="form-inline text-right justify-content-end">
-          <button class="btn btn-primary btn-outline-light mr-2 mb-2" data-toggle="modal" data-target="#" id= "addcard" type="button">Add Project</button>
+          <button class="btn btn-primary btn-outline-light mr-2 mb-2" data-toggle="modal" data-target="#myModal" type="button">Add Project</button>
           <button class="btn btn-primary btn-outline-light mb-2" type="button">Delete Project</button>
         </form>
         <!-- MODAL -->
-        
-        
-
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Add Project</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="#">
+                  <div>
+                    <label class="form-label mb-3">Project Name: </label>
+                    <input type="text" class="form-contol">
+                  </div>
+                  <div>
+                    <label class="form-label mb-3">Project Link: </label>
+                    <input type="text" class="form-contol">
+                  </div>
+                  <div class="form-label mb-3">
+                    <label for="addfile">Add Project Image: </label>
+                    <input type="file" class="form-control-file" id="addfile">
+                  </div>
+                  <div class="text-right justify-content-end">
+                    <button class="btn btn-primary btn-outline-light mr-2 mb-2" onclick="addprojectmodel()">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- MODAL -->
         <div class="slider">
           <button class="slider-btn slick-prev"><img src="../../../static/images/icons/prev.svg" alt=""></button>
@@ -136,5 +164,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="{% static 'js/app.js' %}"></script>
   <script src="{% static 'js/backToTop.js' %}"></script>
+  <script src="{% static 'js/addprojectmodel.js' %}"></script>
 </body>
 </html>
