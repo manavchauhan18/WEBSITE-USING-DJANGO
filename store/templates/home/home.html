@@ -24,7 +24,8 @@
             <a class="nav-item nav-link active text-white" href="#Home">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link text-white" href="#About">About</a>
             <a class="nav-item nav-link text-white" href="#Projects">Projects</a>
-            <a class="nav-item nav-link text-white" href="#">Contact Me</a>
+            <a class="nav-item nav-link text-white" href="#Skills">Skills</a>
+            <a class="nav-item nav-link text-white" href="#ContactMe">Contact Me</a>
             <a class="nav-item nav-link disabled text-secondary" href="#">Coming Soon</a>
             
           </div>
@@ -58,7 +59,7 @@
         <h1 class="section-heading"> My Projects </h1>
         <form class="form-inline text-right justify-content-end">
           <button class="btn btn-primary btn-outline-light mr-2 mb-2" data-toggle="modal" data-target="#myModal" type="button">Add Project</button>
-          <button class="btn btn-primary btn-outline-light mb-2" type="button">Delete Project</button>
+          <button class="btn btn-primary btn-outline-light mb-2 js-remove-slide" type="button">Delete Project</button>
         </form>
         <!-- MODAL -->
         <div class="modal" id="myModal">
@@ -73,19 +74,19 @@
               <div class="modal-body">
                 <form action="#">
                   <div>
-                    <label class="form-label mb-3">Project Name: </label>
+                    <label class="form-label mb-3" id="projectname">Project Name: </label>
                     <input type="text" class="form-contol">
                   </div>
                   <div>
-                    <label class="form-label mb-3">Project Link: </label>
+                    <label class="form-label mb-3" id="projectlink">Project Link: </label>
                     <input type="text" class="form-contol">
                   </div>
                   <div class="form-label mb-3">
-                    <label for="addfile">Add Project Image: </label>
+                    <label for="addfile" id="projectimage">Add Project Image: </label>
                     <input type="file" class="form-control-file" id="addfile">
                   </div>
                   <div class="text-right justify-content-end">
-                    <button class="btn btn-primary btn-outline-light mr-2 mb-2" onclick="addprojectmodel()">Submit</button>
+                    <button class="btn btn-primary btn-outline-light mr-2 mb-2 js-add-slide">Submit</button>
                   </div>
                 </form>
               </div>
@@ -96,8 +97,8 @@
         <div class="slider">
           <button class="slider-btn slick-prev"><img src="../../../static/images/icons/prev.svg" alt=""></button>
           <button class="slider-btn slick-next"><img src="../../../static/images/icons/next.svg" alt=""></button>
-          <div class="project-slider">
-            <div class="project-card">
+          <div class="project-slider" id="projectslider">
+            <div class="project-card" id="projectcard">
               <div class="project-image d-flex justify-content-center align-items-center pb-2 pt-2">
                 <img src="../../../static/images/project 1.jpg" alt="">
               </div>
@@ -107,7 +108,7 @@
               </div>
             </div>
             <div class="project-card">
-              <div class="project-image d-flex justify-content-center align-items-center pb-2 pt-2">
+              <div class="project-image d-flex justify-content-center align-items-center pb-2 pt-2" id="projectimage">
                 <img src="../../../static/images/project2.jpg" alt="">
               </div>
               <hr>
@@ -155,6 +156,38 @@
         </div>
       </div>
     </section>
+    <div class="skills" id="Skills">
+      <div class="d-flex justify-content-center align-items-center pl-2 pr-2">
+        <h1 class="mt-5">Skills</h1>
+      </div>
+      <div class="skill-list mt-4 d-flex justify-content-between align-items-center pl-5 pr-5">
+        <img src="../../../static/images/html.png" class="rounded" alt="">
+        <img src="../../../static/images/css.png" class="rounded" alt="">
+        <img src="../../../static/images/js.png" class="rounded" alt="">
+        <img src="../../../static/images/python.png" class="rounded" alt="">
+        <img src="../../../static/images/tensorflow.png" class="rounded" alt="">
+      </div>
+    </div>
+    <div class="contact-us" id="ContactMe">
+      <h1 class=" d-flex justify-content-center align-items-center pl-2 pr-2 pt-5">Contact-Me</h1>
+      <div class="form4 top">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-offset-2">
+                    <div class="form-bg">
+                        <form class="form">
+                            <div class="form-group"> <label class="sr-only">Name</label> <input type="text" class="form-control" required="" id="nameNine" placeholder="Your Name"> </div>
+                            <div class="form-group"> <label class="sr-only">Email</label> <input type="email" class="form-control" required="" id="emailNine" placeholder="Email Address"> </div>
+                            <div class="form-group"> <label class="sr-only">Name</label> <textarea class="form-control" required="" rows="7" id="messageNine" placeholder="Write message"></textarea> </div> 
+                            <button type="submit" class="btn text-center btn-primary btn-outline-light">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
