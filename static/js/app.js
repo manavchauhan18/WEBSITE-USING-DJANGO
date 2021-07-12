@@ -43,9 +43,12 @@ $(document).ready(function() {
      })
 })
 
+var title = document.getElementById('projectname');
+var link = document.getElementById('projectlink');
+var image = document.getElementById('projectimage');
+
 var slideIndex = 6;
 $('.js-add-slide').on('click', function() {
     slideIndex++;
-    $('.project-slider').slick('slickAdd',function addprojectmodel() {
-    });
+    $('.project-slider').slick('slickAdd', '<div class="project-card" id="projectcard"><div class="project-image d-flex justify-content-center align-items-center pb-2 pt-2"><img src="../../../static/images/project 1.jpg" alt=""></div><hr><div><h3><a class="text-center text-decoration-none" href="https://github.com/manavchauhan18/WEBSITE-USING-DJANGO">Website Using Django</a></h3></div></div>' )
 })
